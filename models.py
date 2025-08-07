@@ -75,3 +75,5 @@ class Genre(Base):
 
     # رابطه معکوس با Book
     books = relationship("Book", secondary=book_genres, back_populates="genres")
+
+
